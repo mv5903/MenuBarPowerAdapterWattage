@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		C90C297B2C63DA0600A80940 /* MenuBarPowerAdapterWattageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C297A2C63DA0600A80940 /* MenuBarPowerAdapterWattageApp.swift */; };
-		C90C297D2C63DA0600A80940 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C297C2C63DA0600A80940 /* ContentView.swift */; };
 		C90C297F2C63DA0700A80940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90C297E2C63DA0700A80940 /* Assets.xcassets */; };
 		C90C29822C63DA0700A80940 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90C29812C63DA0700A80940 /* Preview Assets.xcassets */; };
+		C90C298B2C63DCB600A80940 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90C298A2C63DCB600A80940 /* IOKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C90C29772C63DA0600A80940 /* MenuBarPowerAdapterWattage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuBarPowerAdapterWattage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90C297A2C63DA0600A80940 /* MenuBarPowerAdapterWattageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarPowerAdapterWattageApp.swift; sourceTree = "<group>"; };
-		C90C297C2C63DA0600A80940 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C90C297E2C63DA0700A80940 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C90C29812C63DA0700A80940 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C90C29832C63DA0700A80940 /* MenuBarPowerAdapterWattage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MenuBarPowerAdapterWattage.entitlements; sourceTree = "<group>"; };
+		C90C298A2C63DCB600A80940 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C90C298B2C63DCB600A80940 /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +39,7 @@
 			children = (
 				C90C29792C63DA0600A80940 /* MenuBarPowerAdapterWattage */,
 				C90C29782C63DA0600A80940 /* Products */,
+				C90C29892C63DCB600A80940 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				C90C297A2C63DA0600A80940 /* MenuBarPowerAdapterWattageApp.swift */,
-				C90C297C2C63DA0600A80940 /* ContentView.swift */,
 				C90C297E2C63DA0700A80940 /* Assets.xcassets */,
 				C90C29832C63DA0700A80940 /* MenuBarPowerAdapterWattage.entitlements */,
 				C90C29802C63DA0700A80940 /* Preview Content */,
@@ -67,6 +68,14 @@
 				C90C29812C63DA0700A80940 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C90C29892C63DCB600A80940 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C90C298A2C63DCB600A80940 /* IOKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +148,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C90C297D2C63DA0600A80940 /* ContentView.swift in Sources */,
 				C90C297B2C63DA0600A80940 /* MenuBarPowerAdapterWattageApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +279,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MenuBarPowerAdapterWattage/MenuBarPowerAdapterWattage.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -298,6 +307,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MenuBarPowerAdapterWattage/MenuBarPowerAdapterWattage.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
