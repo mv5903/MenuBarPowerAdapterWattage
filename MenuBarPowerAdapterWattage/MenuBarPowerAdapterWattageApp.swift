@@ -36,22 +36,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func updateWattage() {
         let wattage = self.getCurrentWattage()
-        if wattage == 0 {
-            statusItem.isVisible = false
-            return
-        }
         statusItem.isVisible = true
-        statusItem.button?.title = "\(wattage)W"
+        statusItem.button?.title = wattage == 0 ? "BAT" : "\(wattage)W"
     }
 
     func getCurrentWattage() -> Int {
         if let adapterDetails = IOPSCopyExternalPowerAdapterDetails()?.takeRetainedValue() as? [String: Any],
            let watts = adapterDetails["Watts"] as? Int {
             return watts
-        } else {
-            print("Error: Unable to retrieve power adapter details.")
         }
-        
-        return 0;
+        return 0
     }
 }
